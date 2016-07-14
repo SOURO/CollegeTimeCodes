@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+	int x=7,y=9;
+	clrscr();
+		x=(x)+(y);
+	printf("x2=%d\n",x);
+		y=(x)+(y);
+
+	printf("y2=%d\n",y);
+	x++;
+	printf("x1=%d\n",x);
+	y++;
+	printf("y1=%d\n",y);
+
+		x=(x++)+(y++);
+		printf("x3=%d\n",x);
+	printf("y3=%d\n",y);
+
+	y=(x++)+(y++);
+	printf("x4=%d\n",x);
+	printf("y4=%d\n",y);
+	getch();
+}

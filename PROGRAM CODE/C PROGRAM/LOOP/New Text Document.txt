@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,k,n,a=1,b=;
+	clrscr();
+	printf("enter the number of terms");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(k=1;k<=n-i;k++)
+		{
+			printf("  ");
+		}
+		for(j=1;j<=i;j++)
+		{
+			if(a>9)
+			{
+				a=0;
+			}
+			printf("%2d",a);
+			a++;
+		}
+		a=a-(i-1);
+		for(j=1;j<=i-1;j++)
+		{
+			if(b>9)
+			{
+				b=0;
+			}
+			printf("%2d",b);
+			b--;
+		}
+		b=b+3;
+		printf("\n");
+
+
+	}
+	getch();
+}
+

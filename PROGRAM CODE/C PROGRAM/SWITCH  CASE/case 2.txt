@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+	 int a,i,j,flag=1,n,fact=1;
+	 clrscr();
+	 while(1)
+	 {
+		printf("enter 1 to judge odd & even a number");
+		printf("enter 2 to judge prime or not a number");
+		printf("enter 3 to find factorial of a  number");
+		printf("enter ypur choice");
+		scanf("%d",&n);
+		switch(n)
+		{
+			case 1:
+					printf("enter the number");
+					scanf("%d",n);
+					a=n%2;
+					if(a==0)
+					{
+						printf("the %d number is even number",n);
+					}
+					else
+					{
+						printf("the %d number is odd number",n);
+					}
+					break;
+			case 2:
+					printf("enter any number ");
+					scanf("%d",&a);
+					for(i=2;i<a;i++)
+					{
+						flag=2;
+						j=a%i;
+						if(j==0)
+						{
+							printf("the number is not prime");
+							break;
+						}
+					}
+					if(flag==1)
+					{
+						printf("the number is prime");
+					}
+					break;
+			case 3:
+
+					printf("\nenter the value of n");
+					scanf("%d",&n);
+					fact=1;
+					for(i=1;i<=n;i++)
+					{
+						fact*=i;
+					}
+					printf("\n (%d)!=%d",n,fact);
+					break;
+			case 4:
+					printf("thank you");
+					getch();
+					exit(0);
+		}
+		getch();
+	}
+}
+

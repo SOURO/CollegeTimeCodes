@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,k,n,a,b;
+	printf("enter the rows");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--)
+	{
+		for(k=n;k>i;k--)
+		{
+			printf(" ");
+		}
+		a=n-i+1;
+		for(j=1;j<=i;j++)
+		{
+			printf("%d",a);
+			a++;
+		}
+		b=n-1;
+		for(j=1;j<=i-1;j++)
+		{
+			printf("%d",b);
+			b--;
+		}
+		printf("\n");
+	}
+	getch();
+}

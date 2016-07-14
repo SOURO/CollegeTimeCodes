@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,k,n,a;
+	char ch;
+	printf("enter the rows");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--)
+	{  ch='a';
+		for(j=1;j<=i;j++)
+		{
+			printf("%c",ch);
+			ch++;
+		}
+		for(k=n;k>i;k--)
+		{
+			printf(" ");
+		}
+		for(k=n;k>i;k--)
+		{
+			printf(" ");
+		}
+		if(i==n)
+		{
+			printf("\b");
+		}
+		ch=ch+i-1;
+		for(j=1;j<=i;j++)
+		{
+			printf("%c",ch);
+			ch--;
+		}
+		printf("\n");
+	}
+	getch();
+}

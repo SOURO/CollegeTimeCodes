@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1344956893 source:/home/souro/Desktop/T02/main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+

@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,m,n,hcf,lcm;
+
+	hcf=1;
+	clrscr();
+	printf("enter the value of two number in integer format");
+	scanf("%d %d",&m,&n);
+	for(i=2;i<=m&&i<=n;i++)
+	{
+		while(m%i==0&&n%i==0)
+		{
+			hcf=hcf*i;
+			m=m/i;
+			n=n/i;
+		}
+
+	}
+
+		lcm=hcf*m*n;
+		printf("\nthe value of hcf =%d",hcf);
+		printf("\n the value of lcm =%d",lcm);
+		getch();
+}

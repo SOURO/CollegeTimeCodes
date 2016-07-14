@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1345227534 source:/home/souro/Desktop/GOALIE/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

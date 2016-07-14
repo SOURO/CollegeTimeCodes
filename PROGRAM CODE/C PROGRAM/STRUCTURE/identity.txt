@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+struct date
+{
+	int dd,mm,yy;
+};
+struct student
+{
+	char name[30],dept[30];
+	int yy,roll;
+	struct date dob;
+};
+void main()
+{
+	struct student s;
+	printf("enter your name\n depertment \nacademic year \nroll number");
+	gets(s.name);
+	gets(s.dept);
+	scanf("%d %d",&s.yy,&s.roll);
+	printf("enter your date of birth");
+	scanf("%d %d %d",&s.dob.dd,&s.dob.mm,&s.dob.yy);
+	printf("\n\n\nyour identity is given below\n\n");
+	printf("NAME:%s\n",s.name);
+	printf("DEPERTMENT:%s\n",s.dept);
+	printf("ACADEMIC YEAR:%d\n",s.yy);
+	printf("ROLL NO:%d\n",s.roll);
+	printf("DATE OF BIRTH:%d %d %d\n",s.dob.dd,s.dob.mm,s.dob.yy);
+	getch();
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+ #include<conio.h>
+ int fact(int n)
+ {
+	int i,f=1;
+	for(i=1;i<=n;i++)
+	{
+		f*=i;
+	}
+	return f;
+ }
+ void main()
+ {
+	int f1,x;
+	clrscr();
+	printf("enter a number");
+	scanf("%d",&x);
+	f1=fact(x);
+	printf("the factorial of given number is%d",f1);
+	getch();
+ }

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1363431922 source:/home/souro/Desktop/BST_INSERTION/main.c
+	<stdio.h>
+	<stdlib.h>
+

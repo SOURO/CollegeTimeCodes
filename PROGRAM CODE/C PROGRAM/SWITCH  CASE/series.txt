@@ -1,0 +1,127 @@
+ #include<stdio.h>
+ #include<conio.h>
+ #include<math.h>
+ void main()
+ {
+	int n,i,j,k;
+	float a,d,tn,sn,r,num,deg,rad,x;
+	long unsigned int den=1;
+	clrscr();
+	while(1)
+	{
+		printf("enter 1 for AP series");
+		printf("enter 2 for GP series");
+		printf("enter 3 for SIN series");
+		printf("enter 4 for COS series");
+		printf("enter 5 for EXP series");
+		printf("enter 6 for exit");
+		printf("enter your choice");
+		scanf("%d",n);
+		switch(n)
+		{
+			case 1:
+					sn=0;
+					printf("enter:\nthe first term\ncommon differnce\nnumber of terms for summation\n");
+					scanf("%f %f %d",&a,&d,&n);
+					printf("\nthe AP series is");
+					for(i=1;i<=n;i++)
+					{
+					tn=a+(i-1)*d;
+					printf("\t%f",tn);
+					sn=sn+tn;
+					}
+					printf("\nthe sumation of AP series is=%f",sn);
+					break;
+			case 2:
+					sn=0;
+					printf("enter:\nthe first term\ncommon 					ratio\nnumber of terms for summation\n");
+					scanf("%f %f %d",&a,&r,&n);
+					printf("\nthe GP series is");
+					for(i=1;i<=n;i++)
+					{
+					tn=a*pow(r,i-1);
+					printf("\t%f",tn);
+					sn=sn+tn;
+					}
+					printf("\nthe sumation of GP series is=%f",sn);
+					break;
+			case 3:
+					sn=0;
+					k=1;
+					printf("enter any value in degree");
+					scanf("%f",&deg);
+					rad=deg*(3.142/180);
+					for(i=1;i<=10;i++)
+					{
+					num=pow(rad,(2*i-1));
+					for(j=1;j<=(2*i)-1;j++)
+					{
+					den=den*j;
+					}
+					tn=k*(num/den);
+					k=-k;
+					sn=sn+tn;
+					}
+					printf("the value of sin is=%f",sn);
+					break;
+			case 4:
+					sn=1;
+					k=-1;
+					printf("enter any value in degree");
+					scanf("%f",&deg);
+					rad=deg*(3.142/180);
+					for(i=1;i<=10;i++)
+					{
+					num=pow(rad,(2*i));
+
+					den=den*(2*i);
+
+					tn=k*(num/den);
+					k=-k;
+					sn=sn+tn;
+					}
+					printf("the cosine of given value is=%f",sn);
+					break;
+			case 5:
+					sn=1;
+					printf("enter the value of x");
+					scanf("%f",&x);
+					for(i=1;i<=10;i++)
+					{
+					num=pow(x,i);
+
+					den=den*i;
+
+					tn=(num/den);
+
+					sn=sn+tn;
+					}
+					printf("the exponential value is=%f",sn);
+					break;
+			case 6:
+					printf("thank you");
+		}
+		getch();
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

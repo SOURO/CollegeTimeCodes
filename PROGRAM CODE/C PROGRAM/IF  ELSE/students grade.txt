@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int s1,s2,s3,s4,s5,total;
+	float per;
+	clrscr();
+	printf("enter the five subject number\n");
+	scanf("%d %d %d %d % d",&s1,&s2,&s3,&s4,&s5);
+	total=s1+s2+s3+s4+s5;
+	printf("total marks of the student is %d\n",total);
+	per=total/5.0;
+	printf("persentage of total marks is %f\n",per);
+	if(per>90)
+	{
+		printf("grade=O");
+	}
+	else if(per>80)
+	{
+		printf("grade=E");
+	}
+	else if(per>70)
+	{
+		printf("grade=A");
+	}
+	else if(per>60)
+	{
+		printf("grade=B");
+	}
+	else if(per>50)
+	{
+		printf("grade=C");
+	}
+	else if(per>40)
+	{
+		printf("grade=D");
+	}
+	else
+	{
+		printf("fail");
+	}
+	getch();
+}

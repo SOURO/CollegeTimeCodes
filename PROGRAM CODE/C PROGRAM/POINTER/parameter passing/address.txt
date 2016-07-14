@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void swap(int *a,int *b)
+{
+	*a=*a+*b;
+	*b=*a-*b;
+	*a=*a-*b;
+
+	printf("\n\nin swap :: x=%d y=%d",*a,*b);
+	printf("\nin swap :: &x=%u &y=%u",a,b);
+}
+void main()
+{
+	int x=5,y=7;
+	clrscr();
+
+	printf("Before swapping in main::x=%d y=%d",x,y);
+	printf("\nBefore swapping in main::&=%u &y=%u",&x,&y);
+
+	swap(&x,&y);
+
+	printf("\n\nin main :: x=%d y=%d",x,y);
+	printf("\nin main :: &x=%u &y=%u",&x,&y);
+
+	getch();
+}

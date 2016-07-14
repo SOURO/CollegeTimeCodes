@@ -1,0 +1,11 @@
+public class start_again implements start_again_interface {
+	void show()
+	{
+		System.out.println("Hello");
+	}
+	public static void main(String args[])
+	{
+		System.out.println("World");
+	}
+
+}

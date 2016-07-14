@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#inclde"alloc.h"
+#define NULL 0
+void main()
+{
+
+	int *p,*table,*ptr;
+	int size;
+	printf("\n what is the size of table?");
+	scanf("%d",size);
+	printf("\n");
+	ptr=(int*)malloc(size*sizeof(int));
+	if(ptr==NULL)
+	{
+		printf("no space avaliable");
+		exit(1);
+	}
+	printf("adress of the frist byte is %u\n",table);
+	printf("input table values\n");
+	for(p==table;p<table+size;p++)
+	{
+		scanf("%d",p);
+	}
+	for(p=table+size-1;p>=table;p--)
+	{
+		printf("%d is stored at address %u\n",*p,p);
+	}
+	getch();
+}

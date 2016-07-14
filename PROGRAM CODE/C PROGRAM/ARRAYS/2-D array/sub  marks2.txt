@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+
+{
+	int m1[100][12],t[100],i,j,m,n;
+	float per[100];
+	clrscr();
+	printf("enter how many subject");
+	scanf("%d",&m);
+	printf("\nhow many subject");
+	scanf("%d",&n);
+	printf("\nenter %d subject mark of %d students",m*n,m);
+	for(i=0;i<m;i++)
+	{
+		t[i]=0;
+		for(j=0;j<n;j++)
+		{
+			  scanf("%d",&m1[i][j]);
+			  t[i]=t[i]+m1[j];
+		}
+
+		printf("\nthe total marks of %d no. students is %d",i+1,t[i]);
+		per[i]=(float)t[i]/n;
+		printf("\nthe persentage of total marks of %d no.students is %f",i+1,per);
+
+		if(per>=90)
+		printf("\ngrade O");
+		else if(per>=80)
+		printf("grade E");
+		else if(per>=70)
+		printf("\ngrade A");
+		else if(per>=60)
+		printf("\ngrade b");
+		else if(per>=50)
+		printf("\ngrade c");
+		else if(per>=40)
+		printf("\ngrade d");
+		else if(per<40)
+		printf("\nfail");
+	}
+		getch();
+}

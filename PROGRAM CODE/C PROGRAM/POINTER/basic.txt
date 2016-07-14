@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int *p,a=5;
+	p=&a;
+	clrscr();
+	printf("%d\n",&p);
+	printf("%d\n",&*p);
+	printf("%d\n",*&p);
+	printf("%d\n",p);
+	printf("%d\n",*p);
+	getch();
+}

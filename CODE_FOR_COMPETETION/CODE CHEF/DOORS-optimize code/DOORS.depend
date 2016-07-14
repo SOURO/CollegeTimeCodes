@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1344889707 source:/home/souro/Desktop/DOORS/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

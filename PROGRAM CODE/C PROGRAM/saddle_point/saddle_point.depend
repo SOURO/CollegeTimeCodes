@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1343733641 source:/home/souro/Desktop/saddle_point/main.c
+	<stdio.h>
+	<stdlib.h>
+

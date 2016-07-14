@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------------------
+				  Computer Graphics Program Set
+				[ Developed by : Divyen K Patel ]
+	       		      MCA 4th Semester - Gujarat University
+-----------------------------------------------------------------------------------------------
+
+
+
+[ Program Set 01 ]
+
+01. DDA line drawing algorithm
+02. Bresenham line drawing algorithm
+03. Midpoint Circle Drawing
+04. Scanfill
+05. Boundary Fill (8 Connected Point)
+06. Floodfill
+
+
+[ Program Set 02 ]
+
+01. Rotate About Origin
+02. Rotate about Reference Point
+03. Scaling about Origin
+04. Scaling about Reference Point
+05. Translation
+06. Reflection in x Axis
+07. Reflection in y Axis
+08. Reflection on any line.
+09. Cohen Sutherland Line clipping Algorithm
+
+
+
+[ Program Set 03 ]
+
+01. Line clipping by Cohen Sutherland
+02. Liang Barsky Algorithm for Line Clipping
+03. Nicol Lee Nicol Algorithm for Line Clipping
+04. Sutherland Hodgemann Algorithm for Polygon clipping

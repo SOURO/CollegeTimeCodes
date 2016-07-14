@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x=7 ,y=9;
+	clrscr();
+	x=x+++y;
+	y=x+++y;
+	printf("x=%d\ny=%d",x,y);
+	getch();
+}
